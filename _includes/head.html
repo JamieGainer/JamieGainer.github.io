@@ -7,4 +7,16 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link href="{{ "/feed.xml" | prepend: site.baseurl }}" type="application/rss+xml" rel="alternate" title="{{ site.title }} posts">
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  {% if page.mathjax %}
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']],
+          processEscapes: true
+        }
+      };
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  {% endif %}
 </head>
