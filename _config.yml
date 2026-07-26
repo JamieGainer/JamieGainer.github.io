@@ -1,0 +1,16 @@
+# Site settings
+title: Jamie Gainer
+email:
+description: "Notes and essays by Jamie Gainer."
+baseurl: ""
+url: "https://JamieGainer.github.io"
+github_username: JamieGainer
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+highlighter: rouge
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge

@@ -1,0 +1,14 @@
+<header class="site-header">
+  <div class="wrap">
+    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <a class="page-link" href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a>
+      {% for page in site.pages %}
+        {% if page.title and page.includelink %}
+          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+        {% endif %}
+      {% endfor %}
+    </nav>
+  </div>
+</header>

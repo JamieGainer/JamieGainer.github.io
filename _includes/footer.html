@@ -1,0 +1,17 @@
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-col footer-col-1">
+      <p>{{ site.title }}</p>
+    </div>
+
+    <div class="footer-col footer-col-2">
+      {% if site.github_username %}
+        <a href="https://github.com/{{ site.github_username }}">github.com/{{ site.github_username }}</a>
+      {% endif %}
+    </div>
+
+    <div class="footer-col footer-col-3">
+      <p>{{ site.description }}</p>
+    </div>
+  </div>
+</footer>
